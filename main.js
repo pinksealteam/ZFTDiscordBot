@@ -27,7 +27,7 @@ app.get('/', (req, res) => {
   res.sendFile(imagePath);
 });
 app.listen(port, () => {
-  console.log(`🔗 Listening to GlaceYT : http://localhost:${port}`);
+  console.log(`🔗 Listening to Cajger : http://localhost:${port}`);
 });
 printWatermark();
 
@@ -108,7 +108,7 @@ client.once('ready', () => {
   setTimeout(() => {
     console.log('\x1b[32m%s\x1b[0m', `|    🎯 Activity sucessfully set!`);
     client.user.setPresence({
-      activities: [{ name: `v@1.7`, type: ActivityType.Watching }],
+      activities: [{ name: `v@1.0`, type: ActivityType.Watching }],
       status: 'idle',
     });
   }, 2000); 
