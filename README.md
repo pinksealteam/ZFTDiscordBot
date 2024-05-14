@@ -1,5 +1,5 @@
-#  MULTI-MUSIC BOT BY GlaceYT 
-▶️ simple and powerful multi music bot.
+#  ZFT Music Bot 
+▶️ simple and powerful discord bot
 ▶️ consisting of various commands.
 ▶️ Still in development you may face minor bugs|
 
@@ -33,7 +33,7 @@ The basic or default prefix is "?". You can change the prefix by modifying the `
 ?blush : anime gif interaction
 ...
 
-## 🤝 Contributing [Contact me on Discord]
+## 🤝 Contributing 
 
 **Contributions to this project are welcome! If you'd like to contribute, follow these steps:**
 
@@ -45,4 +45,4 @@ The basic or default prefix is "?". You can change the prefix by modifying the `
 
 # 📚 Copyright 
 
-All code in this project is authored by GlaceYT. Please do not use this code for any public usage, such as creating YouTube videos, Git repositories, etc., without my explicit permission.
+All code in this project is authored by GlaceYT and Cajger. Please do not use this code for any public usage, such as creating YouTube videos, Git repositories, etc., without my explicit permission.
