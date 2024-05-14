@@ -6,7 +6,7 @@ module.exports = {
     execute(message, args) {
         const supportServerLink = "https://www.youtube.com/channel/UCPOwL09DQXKTVgpMTxQkQZA";
       const githubLink = "https://github.com/pinksealteam";
-      const replitLink = "https://zftmusic.onrender.com";
+      const replitLink = "https://zftdiscordbot.onrender.com";
       const youtubeLink = "https://www.instagram.com/caajger";
         const embed = new EmbedBuilder()
             .setColor('#b300ff')
