@@ -105,7 +105,7 @@ client.on("messageCreate", async (message) => {
         .setAuthor({
           name: 'Playback Paused!',
           iconURL: 'https://cdn.discordapp.com/attachments/1175488636033175602/1175488720519049337/pause.png?ex=656b6a2e&is=6558f52e&hm=6695d8141e37330b5426f146ec6705243f497f95f08916a40c1db582c6e07d7e&',
-          url: 'https://www.youtube.com/channel/UCPOwL09DQXKTVgpMTxQkQZA
+          url: 'https://www.youtube.com/channel/UCPOwL09DQXKTVgpMTxQkQZA'
         })
         .setDescription('**MORAM NASTAVITI EDGING SESSION PA NEMA GLAZBE ZA VAS.**')
         .setColor('#2b71ec');
