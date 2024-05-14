@@ -9,7 +9,7 @@ module.exports = {
     description: 'Ban a user from the server',
     execute(message, args) {
         if (!message.member.permissions.has('BAN_MEMBERS')) {
-            return message.reply('❌ You do not have permission to use this command.');
+            return message.reply('❌ Nemas dovoljan broj lvl5 gyattova da mozes banat nekog');
         }
         const user = message.mentions.users.first();
         if (!user) {
@@ -20,7 +20,7 @@ module.exports = {
         const embed = new EmbedBuilder()
             .setColor('#FF0000')
             .setTitle('User Banned ✅')
-            .setDescription(`▶️ ${user.tag} has been banned from the server by ${message.author.tag}.`)
+            .setDescription(`▶️ ${user.tag} je bio mogged od ${message.author.tag}.`)
             .setTimestamp();
 
         message.reply({ embeds: [embed] });
@@ -28,23 +28,3 @@ module.exports = {
 };
 
 
-/*
-
-   MADE BY RTX!! FEEL FREE TO USE ANY PART OF CODE
-
-  ██████╗░████████╗██╗░░██╗           
-  ██╔══██╗╚══██╔══╝╚██╗██╔╝          
-  ██████╔╝░░░██║░░░░╚███╔╝░          
-  ██╔══██╗░░░██║░░░░██╔██╗░          
-  ██║░░██║░░░██║░░░██╔╝╚██╗          
-  ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          
-
-   FOR EMOJIS EITHER YOU CAN EDIT OR JOIN OUR DISCORD SERVER 
-   SO WE ADD BOT TO OUR SERVER SO YOU GET ANIMATED EMOJIS.
-
-   DISCORD SERVER : https://discord.gg/FUEHs7RCqz
-   YOUTUBE : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
-
-   FOR HELP CONTACT ME ON DISCORD
-   ## Contact    [ DISCORD SERVER :  https://discord.gg/c4kaW2sSbm ]
-*/
