@@ -12,12 +12,12 @@ module.exports = {
     const embed = new EmbedBuilder()
       .setColor('#2b71ec')
       .setAuthor({
-        name: 'Im here to Help!',
+        name: 'Pomoc za debila!',
         iconURL: 'https://cdn.discordapp.com/attachments/1175487983915376662/1175667506791325706/communication.png?ex=656c10b0&is=65599bb0&hm=e378f1b355a2401bcab504b08a0766001d6b7c090c91ce0a7a7a87c868feb955&', 
-        url: 'https://discord.gg/FUEHs7RCqz'
+        url: 'https://www.youtube.com/channel/UCPOwL09DQXKTVgpMTxQkQZA'
     })
      
-      .setDescription(`__**STATS :**__\n\n> **📊 Bot in servers:** ${serverCount}\n> **🟢 Bot Ping:** ${botPing}ms\n> **👑 Made By [GlaceYT](https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A)**\n\n__**COMMANDS :**__ `)
+      .setDescription(`__**STATS :**__\n\n> **📊 Bot je u ovoliko servera:** ${serverCount}\n> **🟢 Bot Ping:** ${botPing}ms\n> **👑 Made By [Cajger](https://www.youtube.com/channel/UCPOwL09DQXKTVgpMTxQkQZA)**\n\n__**COMMANDS :**__ `)
       .addFields(
       
         {
@@ -57,21 +57,21 @@ module.exports = {
         }
       )
       .setThumbnail(botUser.avatarURL({ dynamic: true, format: 'png', size: 1024 }))
-      .setImage(`https://cdn.discordapp.com/attachments/1113800537402527903/1236803979996958740/11.png?ex=6641e8b7&is=66409737&hm=96f69ba8bcde4ca44bf8713e22001e0bafad0335cfd1f57c439a34b4762f0e03&`);
+      .setImage(`https://cdn.discordapp.com/attachments/1151522152185597952/1239555175870631996/Cool20Text20-20ZestFestTarik20Music20458168465120178.png?ex=664401f7&is=6642b077&hm=833cdd754bff975eef0a8ec43561c729fb7b39260c8da5f1af753540cd2abe8c&`);
 
     const button1 = new ButtonBuilder()
       .setLabel('YouTube')
-      .setURL('https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A')
+      .setURL('https://www.youtube.com/channel/UCPOwL09DQXKTVgpMTxQkQZA')
       .setStyle(ButtonStyle.Link);
 
     const button2 = new ButtonBuilder()
-      .setLabel('Discord')
-      .setURL('https://discord.gg/xQF9f9yUEM')
+      .setLabel('Github')
+      .setURL('https://github.com/pinksealteam')
       .setStyle(ButtonStyle.Link);
 
     const button3 = new ButtonBuilder()
-      .setLabel('Code')
-      .setURL('https://github.com/GlaceYT')
+      .setLabel('Stranica')
+      .setURL('https://zftmusic.onrender.com')
       .setStyle(ButtonStyle.Link);
       
     const row = new ActionRowBuilder()
