@@ -6,7 +6,7 @@ module.exports = {
     execute(message, args) {
         // Check if the user has the necessary permissions to use the command
         if (!message.member.permissions.has('KICK_MEMBERS')) {
-            return message.reply('❌ You do not have permission to use this command.');
+            return message.reply('❌ Nemas dovoljan edging streak da mozes kickat betas iz servera.');
         }
 
         // Check if a user was mentioned in the command
@@ -23,7 +23,7 @@ module.exports = {
         const embed = new EmbedBuilder()
             .setColor('#FF0000')
             .setTitle('User Kicked ✅')
-            .setDescription(`▶️ ${user.tag} has been kicked from the server by ${message.author.tag}.`)
+            .setDescription(`▶️ ${user.tag} je bio rizzed up od ${message.author.tag}, pa je pobjegao iz servera jer je ${message.author.tag} zesca pedofilcina, ono buraz fuj.`)
             .setTimestamp();
 
         message.reply({ embeds: [embed] });
@@ -31,23 +31,3 @@ module.exports = {
 };
 
 
-/*
-
-   MADE BY RTX!! FEEL FREE TO USE ANY PART OF CODE
-
-  ██████╗░████████╗██╗░░██╗           
-  ██╔══██╗╚══██╔══╝╚██╗██╔╝          
-  ██████╔╝░░░██║░░░░╚███╔╝░          
-  ██╔══██╗░░░██║░░░░██╔██╗░          
-  ██║░░██║░░░██║░░░██╔╝╚██╗          
-  ╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝          
-
-   FOR EMOJIS EITHER YOU CAN EDIT OR JOIN OUR DISCORD SERVER 
-   SO WE ADD BOT TO OUR SERVER SO YOU GET ANIMATED EMOJIS.
-
-   DISCORD SERVER : https://discord.gg/FUEHs7RCqz
-   YOUTUBE : https://www.youtube.com/channel/UCPbAvYWBgnYhliJa1BIrv0A
-
-   FOR HELP CONTACT ME ON DISCORD
-   ## Contact    [ DISCORD SERVER :  https://discord.gg/c4kaW2sSbm ]
-*/
