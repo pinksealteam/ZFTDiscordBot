@@ -71,7 +71,7 @@ module.exports = {
 
     const button3 = new ButtonBuilder()
       .setLabel('Stranica')
-      .setURL('https://zftmusic.onrender.com')
+      .setURL('https://zftdiscordbot.onrender.com')
       .setStyle(ButtonStyle.Link);
       
     const row = new ActionRowBuilder()
