@@ -76,7 +76,7 @@ client.on("messageCreate", async (message) => {
             })
                 .setDescription(`**${track.info.title} **has been queued up and is ready to play!`)
                 .setColor('#14bdff')
-                .setFooter({ text: 'Use queue command for more Information' });
+                .setFooter({ text: 'Koristite queue komandu za vise informacija' });
             message.reply({ embeds: [embed] });
 
             if (!player.playing && !player.paused) return player.play();
@@ -88,13 +88,13 @@ client.on("messageCreate", async (message) => {
         if (!player) return message.channel.send("No player available.");
     
         const loopOption = args[0];
-        if (!loopOption) return message.channel.send("Please provide a loop option: **queue**, **track**, or **none**.");
+        if (!loopOption) return message.channel.send("Daj mi loop option: **queue**, **track**, or **none**.");
     
         if (loopOption === "queue" || loopOption === "track" || loopOption === "none") {
             player.setLoop(loopOption);
             message.channel.send(`Loop set to: ${loopOption}`);
         } else {
-            message.channel.send("Invalid loop option. Please choose `queue`, `track`, or `none`.");
+            message.channel.send("Netocna opcija za loop. Molim rizzaj samo `queue`, `track`, ili `none`.");
         }
     } else if (command === "pause") {
         const player = client.riffy.players.get(message.guild.id); 
@@ -146,7 +146,7 @@ client.on("messageCreate", async (message) => {
 
         const removedTrack = player.queue.remove(index - 1);
 
-        if (!removedTrack) return message.channel.send("No track found at the specified index.");
+        if (!removedTrack) return message.channel.send("Nisam nasel kaj da maknem");
         const embed = new EmbedBuilder()
         .setColor('#188dcc')
             .setAuthor({
@@ -188,7 +188,7 @@ client.on("messageCreate", async (message) => {
           iconURL: 'https://cdn.discordapp.com/attachments/1175488636033175602/1175488721253052426/right-chevron-.png?ex=656b6a2e&is=6558f52e&hm=7a73aa51cb35f25eba52055c7b4a1b56bbf3a6d150643adc15b52dc533236956&',
           url: 'https://www.youtube.com/channel/UCPOwL09DQXKTVgpMTxQkQZA'
         })
-          .setDescription('**Let\'s move on to the next beat...**');
+          .setDescription('**Let\'s skibidi our way out of this one...**');
         
         message.reply({ embeds: [embed] });
     } else if (command === "shuffle") {
@@ -203,7 +203,7 @@ client.on("messageCreate", async (message) => {
           iconURL: 'https://cdn.discordapp.com/attachments/1230824451990622299/1236794583732457473/7828-verify-ak.gif?ex=6641dff7&is=66408e77&hm=e4d3f67ff76adbb3b7ee32fa57a24b7ae4c5acfe9380598e2f7e1a6c8ab6244c&',
           url: 'https://www.youtube.com/channel/UCPOwL09DQXKTVgpMTxQkQZA'
         })
-          .setDescription('**Let\'s change the rhythm with a random selection!**');
+          .setDescription('**ide malo promjena kai cenat streama u random selekciju pjesmi!**');
 
         message.reply({ embeds: [embed] });
     } else if (command === "stop") {
@@ -219,7 +219,7 @@ client.on("messageCreate", async (message) => {
           iconURL: 'https://cdn.discordapp.com/attachments/1230824451990622299/1230824519220985896/6280-2.gif?ex=6641e8a8&is=66409728&hm=149efc9db2a92eb90c70f0a6fb15618a5b912b528f6b1dcf1b517c77a72a733a&',
           url: 'https://www.youtube.com/channel/UCPOwL09DQXKTVgpMTxQkQZA'
         })
-          .setDescription('**Bringing the music to a halt...**');
+          .setDescription('**Necu vise edgeat i prestajem svirat.**');
         message.reply({ embeds: [embed] });
     } else if (command === "clear") {
         const player = client.riffy.players.get(message.guild.id); 
@@ -234,7 +234,7 @@ client.on("messageCreate", async (message) => {
           iconURL: 'https://cdn.discordapp.com/attachments/1230824451990622299/1236802032938127470/4104-verify-yellow.gif?ex=6641e6e7&is=66409567&hm=25ecf140bc9c1f9492e9b7a0b573457fd498d744c28d56c5df663d7f84302083&',
           url: 'https://www.youtube.com/channel/UCPOwL09DQXKTVgpMTxQkQZA'
         })
-          .setDescription('**Starting afresh, clearing out the queue..**');
+          .setDescription('**Cistim queue kao svoje gace, znaci nikad.**');
         message.reply({ embeds: [embed] });
     }
 });
@@ -304,7 +304,7 @@ client.riffy.on("queueEnd", async (player) => {
           iconURL: 'https://cdn.discordapp.com/attachments/1230824451990622299/1230824519220985896/6280-2.gif?ex=6641e8a8&is=66409728&hm=149efc9db2a92eb90c70f0a6fb15618a5b912b528f6b1dcf1b517c77a72a733a&',
           url: 'https://www.youtube.com/channel/UCPOwL09DQXKTVgpMTxQkQZA'
         })
-          .setDescription('**Bye Bye!, No more songs to play...**');
+          .setDescription('**Bye Bye!, No more songs to play... Bye bye insert looksmax song**');
           channel.send({ embeds: [embed] });
       
     }
