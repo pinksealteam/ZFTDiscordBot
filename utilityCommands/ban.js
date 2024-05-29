@@ -8,6 +8,9 @@ module.exports = {
     name: 'ban',
     description: 'Ban a user from the server',
     execute(message, args) {
+         if (!message.member.permissions.has('BAN_MEMBERS')) {
+            return message.reply('❌ Nemas dovoljan broj lvl5 gyattova da mozes banat nekog');
+        }
        
         const user = message.mentions.users.first();
         if (!user) {
