@@ -7,6 +7,7 @@ module.exports = {
        
         const embed = new EmbedBuilder()
             .setColor('#b300ff')
+            .setTitle('**PATCH NOTES 1.1**')
             .setAuthor({
               name: 'Cajger',
               iconURL: 'https://cdn.discordapp.com/avatars/1239547998480896010/3759997fc353c2ad82d4844b02fedc01.webp?size=4096', 
