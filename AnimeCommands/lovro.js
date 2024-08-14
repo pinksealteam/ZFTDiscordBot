@@ -6,6 +6,9 @@ module.exports = {
     name: 'lovro',
     description: 'Fetches an NSFW uniform image.',
     async execute(message, args) {
+        if (!message.channel.nsfw) {
+            return message.reply('This command can only be used in NSFW channels.');
+        }
         try {
             // Fetch NSFW uniform image
             const imageUrl = await hmtai.nsfw.uniform();
