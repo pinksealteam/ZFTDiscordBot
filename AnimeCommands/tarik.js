@@ -6,13 +6,16 @@ module.exports = {
     name: 'tarik',
     description: 'Fetches an NSFW GIF.',
     async execute(message, args) {
+        if (!message.channel.nsfw) {
+            return message.reply('This command can only be used in NSFW channels.');
+        }
         try {
             // Fetch NSFW GIF
             const imageUrl = await hmtai.nsfw.gif();
             
             // Construct the embed using EmbedBuilder
             const embed = new EmbedBuilder()
-                .setTitle('NSFW GIF')
+                .setTitle('tarik ahh gif')
                 .setImage(imageUrl)
                 .setColor('#ff69b4'); // Optional: Set embed color
 
