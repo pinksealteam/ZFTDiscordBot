@@ -3,7 +3,7 @@ const HMtai = require('hmtai');
 const hmtai = new HMtai();
 
 module.exports = {
-    name: 'boobjob',
+    name: 'arijan',
     description: 'Fetches an NSFW boobjob image.',
     async execute(message, args) {
         if (!message.channel.nsfw) {
