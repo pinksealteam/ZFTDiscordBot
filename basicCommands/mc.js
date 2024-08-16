@@ -1,4 +1,4 @@
-const { Client, EmbedBuilder, ActionRowBuilder, TextInputBuilder, ModalBuilder, TextInputStyle, Events } = require('discord.js');
+const { Client, GatewayIntentBits, EmbedBuilder, ActionRowBuilder, TextInputBuilder, ModalBuilder, TextInputStyle, Events } = require('discord.js');
 const db = require("../mongodb");
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
