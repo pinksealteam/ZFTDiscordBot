@@ -1,5 +1,13 @@
-const { EmbedBuilder, ActionRowBuilder, TextInputBuilder, ModalBuilder, TextInputStyle, Events } = require('discord.js');
+const { Client, EmbedBuilder, ActionRowBuilder, TextInputBuilder, ModalBuilder, TextInputStyle, Events } = require('discord.js');
 const db = require("../mongodb");
+
+const client = new Client({
+  intents: Object.keys(GatewayIntentBits).map((a) => {
+    return GatewayIntentBits[a];
+  }),
+});
+
+
 module.exports = {
     name: 'mc',
     description: 'Get the Minecraft server IP and port by entering the correct password',
